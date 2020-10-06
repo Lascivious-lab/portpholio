@@ -25,7 +25,7 @@
     bottom: 0;
     background: rgb(3, 4, 9);
     background: linear-gradient(0deg, rgba(3, 4, 9, 1) 0%, rgba(3, 4, 9,  0.1292892156862745) 35%);
-
+    pointer-events: none;
 }
 
 .swiper-slide__content{
