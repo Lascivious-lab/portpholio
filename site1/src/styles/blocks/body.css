@@ -1,0 +1,28 @@
+.page{
+
+}
+
+.page__body{
+    margin: 0;
+    padding: 0;
+    background-color: #030409;
+    font-size: 16px;
+    color: #2E2F32;
+    position: relative;
+}
+
+@media screen and (min-width: 998px) {
+    .page__body{
+        font-size: 13px;
+    }
+}
+
+.container{
+    max-width: 90vw;
+    margin: 0 auto;
+}
+@media screen and (min-width: 998px) {
+    .container {
+        max-width: 950px;
+    }
+}

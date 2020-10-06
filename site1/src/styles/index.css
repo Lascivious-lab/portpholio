@@ -7,6 +7,12 @@
 
 @import 'blocks/grid.css';
 @import 'blocks/header.css';
+@import 'blocks/footer.css';
+@import 'blocks/body.css';
+@import 'blocks/section.css';
+
+
+
 /*@import 'blocks/header.css';*/
 /*@import 'blocks/logo.css';*/
 /*@import 'blocks/menu.css';*/

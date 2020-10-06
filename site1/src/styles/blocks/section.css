@@ -1,0 +1,14 @@
+.section{
+
+}
+
+.section:first-of-type{
+    padding-top: 65px;
+}
+
+
+@media screen and (min-width: 998px) {
+    .section:first-of-type{
+        padding-top: 120px;
+    }
+}

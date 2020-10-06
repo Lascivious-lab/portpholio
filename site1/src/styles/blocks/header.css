@@ -1,4 +1,22 @@
 .header{
-	width: 256px;
-	background-color: var(--basic-dark);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 30px 0;
+    width: 100%;
+    max-height: 50px;
+    box-sizing: border-box;
 }
+
+@media screen and (min-width: 998px) {
+    .header{
+        max-height: 100px;
+    }
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+}
+
