@@ -52,6 +52,7 @@
     grid-area: 3/2;
     justify-self: end;
     align-self: end;
+    display: flex;
 }
 
 .card:before {

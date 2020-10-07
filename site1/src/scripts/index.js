@@ -1,18 +1,18 @@
 (() => {
     // slider1
-    var swiper1 = new Swiper('#swiper-container-1', {
-        direction: 'vertical',
-        slidesPerView: 1,
-        spaceBetween: 30,
-        // mousewheel: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
+    // var swiper1 = new Swiper('#swiper-container-1', {
+    //     direction: 'vertical',
+    //     slidesPerView: 1,
+    //     spaceBetween: 30,
+    //     // mousewheel: true,
+    //     pagination: {
+    //         el: '.swiper-pagination',
+    //         clickable: true,
+    //     },
+    // });
 
     slider2
-    var swiper2 = new Swiper('.swiper-container', {
+    var swiper2 = new Swiper('#swiper-container-2', {
         slidesPerView: 3,
         spaceBetween: 30,
         slidesPerGroup: 3,
@@ -23,8 +23,8 @@
             clickable: true,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '#swiper-button1',
+            prevEl: '#swiper-button2',
         },
     });
 

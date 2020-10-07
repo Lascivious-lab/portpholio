@@ -23,7 +23,7 @@
 }
 
 .header__search {
-    width: 30px;
+    /* width: 100px; */
     cursor: pointer;
 }
 
@@ -34,8 +34,8 @@
     display: flex;
 }
 
-.logo {
-    font-size: 16px;
+.header__logo .logo {
+    font-size: 20px;
     font-weight: 600;
     text-decoration: none;
     color: inherit
