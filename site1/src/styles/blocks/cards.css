@@ -12,22 +12,46 @@
     height: 360px;
     position: relative;
     border-radius: 5px;
-    padding-top: 220px;
     box-sizing: border-box;
 }
 
 .card__content {
-    position: relative;
     z-index: 1;
     color: #C3C4C4;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: minmax(40px, 60px) auto auto;
+    position: absolute;
+    bottom: 0;
+
+    padding: 15px;
 }
 
 .card__title {
+    grid-area: 1/1;
     font-weight: 400;
+    margin: 5px 0;
+}
+
+.card__score {
+    grid-area: 1/2
+}
+
+.card__prise {
+    grid-area: 3/1;
+    margin-top: 30px;
 }
 
 .card__description {
     color: #7C7C7C;
+    margin: 5px 0;
+    font-size: 11px;
+}
+
+.card__platforms {
+    grid-area: 3/2;
+    justify-self: end;
+    align-self: end;
 }
 
 .card:before {
