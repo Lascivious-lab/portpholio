@@ -1,4 +1,4 @@
-.swiper-slide_gr {
+.main-card {
     position: relative;
     background-size: cover;
     /* background-position: 100% 100%; */
@@ -15,7 +15,7 @@
 /*    top: 0;*/
 /*    bottom: 0;*/
 /*}*/
-.swiper-slide_gr:before {
+.main-card:before {
     z-index: 0;
     position: absolute;
     content: "";
@@ -28,18 +28,17 @@
     pointer-events: none;
 }
 
-.swiper-slide__content {
+.main-card__content {
     padding: 300px 0;
     margin: 0 auto;
     width: 80%;
-    text-align: center;
     position: relative;
     z-index: 1;
 }
 
 
 @media screen and (min-width: 998px) {
-    .swiper-slide__content {
+    .main-card__content {
         width: 40%;
         margin: 0 0 0 auto;
         text-align: left;
@@ -47,17 +46,16 @@
 }
 
 
-.swiper-slide__title {
-    margin-bottom: 50px;
-    font-size: 58px;
-    color: whitesmoke;
-    letter-spacing: 20px;
-    text-transform: uppercase;
-    font-weight: 100;
+.main-card__title {
+    margin: 0 auto 30px;
+    background-repeat: no-repeat;
+    height: 175px;
+    width: 315px;
+
 }
 
 
-.swiper-slide__link {
+.main-card__link {
     padding: 15px;
     color: white;
     border: 1px solid white;
@@ -68,14 +66,14 @@
     display: block;
 }
 
-.swiper-slide__link:hover {
+.main-card__link:hover {
     background-color: whitesmoke;
     color: #2E2F29;
     border-color: #2E2F29;
-    transition: all .3s;
+    transition: all .5s ease;
 }
 
-.swiper-slide__link:hover .link-arrow {
+.main-card__link .link-arrow:hover {
     box-shadow: 0 0 7px 0 #000000;
 }
 
@@ -86,9 +84,7 @@
     padding: 15px;
 }
 
-.swiper-slide__link .link-arrow {
+.main-card__link .link-arrow {
     margin-right: -16px;
     margin-left: 15px;
 }
-
-
