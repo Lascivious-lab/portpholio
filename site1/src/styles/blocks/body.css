@@ -1,8 +1,6 @@
-.page{
+.page {}
 
-}
-
-.page__body{
+.page__body {
     margin: 0;
     padding: 0;
     background-color: #030409;
@@ -13,15 +11,16 @@
 }
 
 @media screen and (min-width: 998px) {
-    .page__body{
+    .page__body {
         font-size: 13px;
     }
 }
 
-.container{
+.container {
     max-width: 90vw;
     margin: 0 auto;
 }
+
 @media screen and (min-width: 998px) {
     .container {
         max-width: 950px;
