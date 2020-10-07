@@ -1,4 +1,4 @@
-.header{
+.header {
     z-index: 100;
     position: absolute;
     top: 0;
@@ -12,12 +12,31 @@
 }
 
 @media screen and (min-width: 998px) {
-    .header{
+    .header {
         max-height: 100px;
     }
 }
-.header__container{
+
+.header__container {
     display: flex;
     justify-content: space-between;
 }
 
+.header__search {
+    width: 30px;
+    cursor: pointer;
+}
+
+
+.header__items {
+    width: 90px;
+    height: 30px;
+    display: flex;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit
+}
