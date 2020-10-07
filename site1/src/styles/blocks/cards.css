@@ -1,0 +1,41 @@
+.grid-cards {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+    position: relative;
+    border-radius: 5px;
+    padding: 220px 10px 10px;
+    box-sizing: border-box;
+    color: #FAFAFA;
+}
+
+.card__content {
+    position: relative;
+    z-index: 1;
+}
+
+.card__description {
+    color: #7C7C7C;
+}
+
+.card:before {
+    z-index: 0;
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgb(17, 21, 24);
+    background: linear-gradient(0deg, rgba(17, 21, 24, 1) 13%, rgba(17, 21, 24, 0.87718837535014) 33%, rgba(17, 21, 24, 0.22172619047619047) 71%);
+    pointer-events: none;
+    border-radius: 3px;
+}

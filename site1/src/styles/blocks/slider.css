@@ -23,7 +23,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgb(11, 12, 17);
+    background: rgb(3, 4, 9);
     background: linear-gradient(0deg, rgba(3, 4, 9, 1) 0%, rgba(3, 4, 9, 0.9) 20%, rgba(3, 4, 9, 0) 100%);
     pointer-events: none;
 }
@@ -63,7 +63,7 @@
     border: 1px solid white;
     text-decoration: none;
     font-size: 18px;
-    width: 130px;
+    width: 130.5px;
     margin: 0 auto;
     display: block;
 }
