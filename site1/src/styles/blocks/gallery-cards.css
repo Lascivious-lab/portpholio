@@ -1,14 +1,13 @@
 .gallery-cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-tempalte-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 10px;
 }
 
 .gallery-card:nth-child(1){
     grid-area: 1/1/2/3;
 }
-
 .gallery-card:nth-child(2){
     grid-area: 1/3/2/4;
 }
