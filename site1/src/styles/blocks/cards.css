@@ -12,14 +12,18 @@
     height: 360px;
     position: relative;
     border-radius: 5px;
-    padding: 220px 10px 10px;
+    padding-top: 220px;
     box-sizing: border-box;
-    color: #FAFAFA;
 }
 
 .card__content {
     position: relative;
     z-index: 1;
+    color: #C3C4C4;
+}
+
+.card__title {
+    font-weight: 400;
 }
 
 .card__description {
