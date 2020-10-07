@@ -55,6 +55,19 @@
     display: flex;
 }
 
+.card__score {
+    border: 2px solid #36383A;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
 .card:before {
     z-index: 0;
     position: absolute;
@@ -67,4 +80,11 @@
     background: linear-gradient(0deg, rgba(17, 21, 24, 1) 13%, rgba(17, 21, 24, 0.87718837535014) 33%, rgba(17, 21, 24, 0.22172619047619047) 71%);
     pointer-events: none;
     border-radius: 3px;
+    transition: all 1s;
+}
+
+
+.card:hover.card:before {
+    opacity: .5;
+    transform: all 1s;
 }
