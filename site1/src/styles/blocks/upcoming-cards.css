@@ -1,0 +1,55 @@
+.upcoming-card {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 715px !important;
+    height: 405px;
+    /* border-radius: 15px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.upcoming-card__content {
+    /* position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0; */
+    height: 240px;
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.upcoming-card__title {
+    font-size: 50px;
+    color: #EBE0DC;
+
+}
+
+.upcoming-card__release-date {
+    color: #EBE0DC;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+
+.upcoming-card__platforms {
+    display: flex;
+    align-items: flex-end;
+}
+
+.upcoming-card__description {
+    margin: 0 10px 0 0;
+
+}
+
+.card__icon {
+    margin: 0 5px 3px;
+}
