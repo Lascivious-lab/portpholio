@@ -19,7 +19,7 @@
     //slider2
     var swiper2 = new Swiper('#swiper-container-2', {
         slidesPerView: 4,
-        spaceBetween: 10,
+        spaceBetween: 20,
         slidesPerGroup: 1,
         navigation: {
             nextEl: '#swiper-button1',
