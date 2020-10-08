@@ -15,15 +15,24 @@
     width: 100px;
 }
 
+/* .card__xbox {
+    margin-bottom: 5px;
+} */
 
-
-.card__icon {
+.upcoming-card .card__icon {
     /* fill: #505050; */
-    width: 20px;
+    /* width: 20px;
     height: 15px;
-    display: block;
+    display: block; */
+    margin-bottom: 3px;
 }
 
 .card__icon .icon {
     fill: #505050;
+}
+
+.card_dimensions {
+    width: 20px;
+    height: 15px;
+    display: block;
 }

@@ -1,0 +1,37 @@
+.slider-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.slider-button-prev,
+.slider-button-next {
+    /* align-content: center; */
+    padding: 5px 10px;
+    border: 1px solid #1C1E22;
+
+    cursor: pointer;
+
+}
+
+
+.slider-button-prev:hover .card__icon,
+.slider-button-next:hover .card__icon {
+    background-color: aquamarine;
+}
+
+.slider-button-next {
+    margin-left: 20px;
+}
+
+.slider-button-prev .card__icon {
+    transform: rotate(90deg);
+    height: 15px;
+    width: 10px;
+}
+
+.slider-button-next .card__icon {
+    margin: 0;
+    transform: rotate(-90deg);
+    height: 15px;
+    width: 10px;
+}
