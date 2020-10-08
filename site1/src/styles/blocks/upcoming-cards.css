@@ -2,7 +2,7 @@
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 715px;
+    width: 715px !important;
     height: 405px;
     /* border-radius: 15px; */
     margin: 0 auto;

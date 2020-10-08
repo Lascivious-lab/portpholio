@@ -7,3 +7,8 @@
     display: flex;
     justify-content: space-between;
 }
+
+.section:first-of-type{
+    /*height: 100vh;*/
+    /*overflow: hidden;*/
+}
