@@ -1,0 +1,29 @@
+.icon {
+    height: 100%;
+    width: 100%;
+}
+
+.header__items .icon {
+    fill: #fff;
+}
+
+.header__cart {
+    display: block;
+}
+
+.header__search {
+    width: 100px;
+}
+
+
+
+.card__icon {
+    /* fill: #505050; */
+    width: 20px;
+    height: 15px;
+    display: block;
+}
+
+.card__icon .icon {
+    fill: #505050;
+}

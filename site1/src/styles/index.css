@@ -1,4 +1,3 @@
-
 /* Global */
 
 @import 'variables.css';
@@ -10,10 +9,13 @@
 @import 'blocks/footer.css';
 @import 'blocks/body.css';
 
+@import 'blocks/cards.css';
 
 @import 'blocks/section.css';
-@import 'blocks/slider.css';
+@import 'blocks/main-card.css';
 @import 'blocks/gallery-cards.css';
+@import 'blocks/icons.css';
+@import 'blocks/upcoming-cards.css';
 
 
 

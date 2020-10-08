@@ -1,0 +1,20 @@
+.upcoming-card {
+    background-repeat: no-repeat;
+    width: 715px;
+    height: 405px;
+    /* border-radius: 15px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upcoming-card__title {
+    font-size: 50px;
+    color: #EBE0DC;
+}
+
+.upcoming-card__release-date {
+    color: #EBE0DC;
+    text-align: center;
+}
