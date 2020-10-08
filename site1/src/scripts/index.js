@@ -4,8 +4,12 @@
         direction: 'vertical',
         slidesPerView: 1,
         slidesPerGroup: 1,
-        spaceBetween: 1000,
-        // mousewheel: true,
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+            shadow: false,
+            slideShadows: false,
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
