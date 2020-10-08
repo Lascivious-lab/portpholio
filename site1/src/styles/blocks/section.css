@@ -1,14 +1,15 @@
-.section{
+.section {
     overflow: hidden;
+    margin: 30px 0;
 }
 
-.section__header{
+.section__header {
     color: white;
     display: flex;
     justify-content: space-between;
 }
 
-.section:first-of-type{
+.section:first-of-type {
     /*height: 100vh;*/
     /*overflow: hidden;*/
 }
