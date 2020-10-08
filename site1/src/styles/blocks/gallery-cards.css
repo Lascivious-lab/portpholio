@@ -30,6 +30,7 @@
     position: relative;
     background-position: 50% 50%;
     background-size: cover;
+
 }
 
 .gallery-card:hover.gallery-card:before {
@@ -44,6 +45,7 @@
     left: 0;
     bottom: 0;
     right: 0;
+    transition: all 1s;
     background: rgb(6, 13, 17);
     background: linear-gradient(0deg, rgba(6, 13, 17, 1) 0%, rgba(6, 13, 17, 0.5536589635854341) 100%);
 }
