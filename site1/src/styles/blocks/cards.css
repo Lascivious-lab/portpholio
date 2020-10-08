@@ -1,10 +1,8 @@
 .grid-cards {
     display: grid;
     grid-auto-flow: column;
-    grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
 }
-
 
 .card {
     background-repeat: no-repeat;
@@ -13,6 +11,7 @@
     position: relative;
     border-radius: 5px;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .card__content {
@@ -34,12 +33,14 @@
 }
 
 .card__score {
-    grid-area: 1/2
+    grid-area: 1/2;
+    justify-self: end;
 }
 
 .card__prise {
     grid-area: 3/1;
     margin-top: 30px;
+
 }
 
 .card__description {
@@ -85,6 +86,6 @@
 
 
 .card:hover.card:before {
-    opacity: .5;
+    opacity: .9;
     transform: all 1s;
 }

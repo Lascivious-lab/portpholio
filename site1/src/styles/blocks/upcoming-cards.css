@@ -14,34 +14,42 @@
 
 
 .upcoming-card__content {
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0; */
     height: 240px;
+    margin-top: auto;
     display: grid;
-    /* grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr; */
-    grid-template-areas: "title title"
-        "date  date"
-        "desc  platform";
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .upcoming-card__title {
     font-size: 50px;
     color: #EBE0DC;
-    grid-area: title;
+
 }
 
 .upcoming-card__release-date {
     color: #EBE0DC;
     text-align: center;
-    grid-area: date;
+
+}
+
+
+
+.upcoming-card__platforms {
+    display: flex;
+    align-items: flex-end;
 }
 
 .upcoming-card__description {
-    grid-area: desc;
+    margin: 0 10px 0 0;
+
 }
 
-.upcoming-card__platforms {
-    grid-area: platform;
+.card__icon {
+    margin: 0 5px 3px;
 }
