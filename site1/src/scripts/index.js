@@ -27,6 +27,7 @@
     },
   });
 
+<<<<<<< HEAD
   //section 3
   var swiper3 = new Swiper('#swiper-container-3', {
     slidesPerView: 1,
@@ -40,6 +41,19 @@
       prevEl: '#swiper-button-prev-4',
     },
   });
+=======
+    //section 3
+    var swiper3 = new Swiper('#swiper-container-3', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: '#swiper-button-next-3',
+            prevEl: '#swiper-button-prev-3',
+        },
+    });
+>>>>>>> 64ebdd7bbfecb77f9d9022ac6265e58ca27f5f37
 
   // slider4
   var swiper4 = new Swiper('#swiper-container-4', {
