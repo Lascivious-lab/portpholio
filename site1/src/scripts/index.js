@@ -29,15 +29,13 @@
 
     //section 3
     var swiper3 = new Swiper('#swiper-container-3', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        slidesPerGroup: 1,
-        // loop: true,
-        centeredSlidesBounds: true,
-        loopFillGroupWithBlank: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: true,
         navigation: {
-            nextEl: '#swiper-button-next-4',
-            prevEl: '#swiper-button-prev-4',
+            nextEl: '#swiper-button-next-3',
+            prevEl: '#swiper-button-prev-3',
         },
     });
 
