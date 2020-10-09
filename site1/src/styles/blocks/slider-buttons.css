@@ -1,22 +1,24 @@
 .slider-buttons {
     display: flex;
     align-items: center;
+
 }
 
 .slider-button-prev,
 .slider-button-next {
     /* align-content: center; */
-    padding: 5px 10px;
+    padding: 5px 10px 3px 8px;
     border: 1px solid #1C1E22;
-
+    transition: all .3s;
     cursor: pointer;
 
 }
 
 
-.slider-button-prev:hover .card__icon,
-.slider-button-next:hover .card__icon {
-    background-color: aquamarine;
+.slider-button-prev:hover,
+.slider-button-next:hover {
+    background-color: cornsilk;
+    transition: all .3s;
 }
 
 .slider-button-next {
