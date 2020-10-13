@@ -1,4 +1,4 @@
-.section {
+.section:not(:first-child) {
     overflow: hidden;
     margin: 30px 0;
 }

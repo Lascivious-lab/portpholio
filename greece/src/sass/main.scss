@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: red;
+}
+
+body {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #017dfb;
+}
+
+.button {
+  color: #017dfb;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 0;
+  height: 50px;
+  width: 190px;
+  font-size: 1em;
+  font-weight: 600;
+  -webkit-box-shadow: 0px 0px 57px 6px rgba(1, 125, 251, 0.66);
+  -moz-box-shadow: 0px 0px 57px 6px rgba(1, 125, 251, 0.66);
+  box-shadow: 0px 0px 57px 6px rgba(1, 125, 251, 0.66);
+  cursor: pointer;
+}
+
+.section__title {
+  color: #CFD4DF;
+  display: flex;
+  justify-content: center;
+}
+
+.section {
+  // width: 100%;
+  height: 100%;
+  margin: 0 20px;
+  // display: flex;
+}
+
+
+/////////////////////////////////////////HEADER
+
+.header {
+  height: 240px;
+  width: 100%;
+  padding: 20px 20px 0;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  // grid-template-rows: 1fr 2fr 1fr;
+  align-items: center;
+}
+
+.header__logo {
+  margin-left: 10em;
+}
+
+.header__button {
+  // position: relative;
+  grid-area: 1/4/1/5;
+  // margin-left: 4em;
+  justify-self: center;
+}
+
+.header__button:after {
+  content: '';
+}
+
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+
+input,
+input:active,
+input:focus {
+  outline: none;
+}
+
+.header__menu {
+  grid-area: 1/3/1/4;
+}
+
+.header__menu_nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+////////////////////////////////////////// Start: section_banner
+
+// .banner__image{
+//     width: 100%;
+// }
+
+.section_banner__content {
+  display: grid;
+}
+
+.section_banner {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding-top: 17%;
+  padding-bottom: 13%;
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+}
+
+.banner__title {
+  text-transform: uppercase;
+  color: #017dfb;
+  font-weight: 600;
+  letter-spacing: 0.5em;
+  padding: 2em 0 2em 0;
+  justify-self: center;
+}
+
+.banner__button {
+  justify-self: center;
+}
+
+////////////////////////////////////////// Start: section_search
+
+.section_search {
+  height: 155px;
+  background-color: #017dfb;
+}
+
+.form {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  height: 100%;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  width: 100%;
+
+  &__field {
+    position: relative;
+    width: 70%;
+    height: 50%;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+
+    &_label {
+      position: absolute;
+      width: 100%;
+      height: 80%;
+      pointer-events: none;
+      // border-bottom: 1px solid #fff;
+      color: #fff;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+
+
+      &_img {
+        padding-right: 3px;
+        // transition: all 0.5s ease;
+      }
+
+      // &_name {
+
+      // transition: all 0.3s ease;
+      // }
+    }
+
+    // &::after {
+    //   content: '';
+    //   padding-top: 10px;
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 50%;
+    //   border-bottom: 3px solid aqua;
+    //   left: 0;
+    //   bottom: 0;
+    //   transform: translateX(-100%);
+    //   transition: all 0.3 ease;
+    // }
+  }
+
+
+  &__input {
+    position: absolute;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #017dfb;
+    border: 0;
+    width: 100%;
+    height: 30%;
+    border-bottom: 1px solid #fff;
+  }
+
+  &__field_submit {
+    width: 47px;
+    height: 47px;
+    box-shadow: 0 0 45px rgba(205, 205, 205, 0.85);
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    margin-right: auto;
+  }
+
+}
+
+// .form .form__input:focus+.form__field_label .form__field_label_name,
+// .form .form__input:focus+.form__field_label .form__field_label_img,
+// .form .form__input:valid+.form__field_label .form__field_label_name {
+// .form .form__input:valid+.form__field_label .form__field_label_img
+//   transform: translateY(-150%);
+//   color: yellow;
+// }
+
+// .form .form__input:focus+.form__field_label::after {
+// .form .form__input:valid+.form__field_label::after
+// transform: translateX(0%)
+// }
+
+// form input:focus+.form__field_label .form__field_label_name {
+//   transform: translateY(-150%);
+// }
