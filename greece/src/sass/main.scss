@@ -239,16 +239,17 @@ a:visited {
 
 
 
-////////////////////////////////////////// Start: Section Places
+////////////////////////////////////////// Start: Section Hotels
 
 .section_hotels  {
   background-color: #F9F9F9;
 }
 
-.section__content {
+.content_hotels {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 210px;
 }
 
 .cards {
@@ -271,16 +272,32 @@ a:visited {
     background-color: #FFFFFF;
     width: 100%;
     bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 30px 30px 15px;
+ 
   }
   &__title {
     color: #6D7C9C;
+    font-size: 16px;
+    font-weight: 400;
+    align-self: center;
+    padding-left: 2px;
+  }
+  &__days {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6D7C9C;
+    opacity: 0.4;
+    justify-self: end;
+    padding-right: 20px;
   }
   &__prise {
     color: #808DA9;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 100;
+    justify-self: end;
   }
   &__button {
     position: absolute;
@@ -292,17 +309,71 @@ a:visited {
     -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.25);
     box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.25);  
   }
+  &__rating {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    height: 40px;
+    position: relative;
+    input {
+      display: none;
+    }
+    label {
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 90%;
+      transition: .3s;
+    }
+    input:checked ~ label,
+    input:checked ~ label ~ label {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+    }
+    input:not(:checked) ~ label:hover,
+    input:not(:checked) ~ label:hover ~ label {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+    }
+  }
 }
 
+// .card__rating > input:checked ~ label,
+// .card__rating > input:checked ~ label ~ label {
+//       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+//     }
+// .card__rating > input:not(:checked) ~ label:hover,
+// .card__rating > input:not(:checked) ~ label:hover ~ label {
+//   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+//  }
 
 .more-cards {
   color: #CCCCCC;
   border: 2px solid #E9E9E9;
   background-color: #F9F9F9;
-  margin: 80px;
+  position: absolute;
+  bottom: 80px;
 }
 
 
 
+
+////////////////////////////////////////// End: Section Hotels
+
+////////////////////////////////////////// Start: Section Places
+
+
+.gallery {
+  display: grid;
+  grid-t
+}
+
+.picture {
+  width: 560px;
+  height: 275px;
+  background-repeat: no-repeat;
+}
 
 ////////////////////////////////////////// End: Section Places

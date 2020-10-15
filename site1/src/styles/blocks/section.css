@@ -1,4 +1,4 @@
-.section:not(:first-child) {
+.section:not(:first-of-type) {
     overflow: hidden;
     margin: 30px 0;
 }
